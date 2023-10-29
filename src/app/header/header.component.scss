@@ -1,0 +1,13 @@
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.header-list {
+  display: flex;
+  column-gap: 10vw;
+}
+.active {
+  background-color: cadetblue;
+}
