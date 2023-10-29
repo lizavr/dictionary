@@ -1,8 +1,8 @@
 <div class="dictionary-list-item">
-  <div class="item-word">{{ word.valueEn }}</div>
+  <p class="item-word">{{ word.valueEn }}</p>
+  <p class="item-word">{{ word.valueRu }}</p>
   <div class="item-buttons">
-    <button class="item-edit">+</button>
-    <button class="item-done">-</button>
+    <button class="btn item-edit" (click)="onEdit()">edit</button>
+    <button class="btn item-done">done</button>
   </div>
-
 </div>

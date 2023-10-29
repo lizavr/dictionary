@@ -1,0 +1,9 @@
+<form [formGroup]="wordForm" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="en">EN</label>
+    <input type="text" id="en" formControlName="en" class="form-control">
+    <label for="ru">RU</label>
+    <input type="text" id="ru" formControlName="ru" class="form-control">
+    <button class="btn dictionary-edit-btn" type="submit">Save</button>
+  </div>
+</form>

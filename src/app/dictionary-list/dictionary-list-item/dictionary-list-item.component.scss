@@ -1,12 +1,12 @@
-.dictionary-list-item{
+.dictionary-list-item {
   display: flex;
-  width: 50%;
-  flex-wrap: wrap;
   justify-content: space-between;
   margin: 10px;
+  min-width: 50vw;
 }
-.item-buttons{
-  &>*{
-    width: 50px;
+.item-buttons {
+  & > * {
+    margin: 5px;
+    width: 60px;
   }
 }

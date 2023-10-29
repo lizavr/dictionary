@@ -1,0 +1,13 @@
+.dictionary-list {
+  max-width: 60%;
+}
+.dictionary-radio {
+  display: flex;
+  gap: 20px;
+  margin: 2vh 2vh 4vh 0;
+}
+
+.dictionary-radio input:hover,
+.dictionary-radio label:hover {
+  cursor: pointer;
+}

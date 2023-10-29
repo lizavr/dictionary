@@ -1,5 +1,15 @@
 <div class="container">
+  <div class="dictionary-radio">
+    <div *ngFor="let category of categories">
+      <label>
+        <input type="radio" name="radioGroup" [value]="category.value" [(ngModel)]="selectedCategory"
+          (change)="handleCategorySelection()">
+        {{ category.label }}
+      </label>
+    </div>
+  </div>
   <div class="dictionary-list">
     <app-dictionary-list-item *ngFor="let word of dictionary" [word]="word"></app-dictionary-list-item>
   </div>
+  <app-new-word class="dictionary-new"></app-new-word>
 </div>

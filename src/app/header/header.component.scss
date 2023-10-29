@@ -3,11 +3,30 @@ ul {
 }
 a {
   text-decoration: none;
+  padding: 5px;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: #29365d;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  &:active{
+    background-color: #394774;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+}
+.header-container {
+  max-width: 90vw;
+  padding: 10px;
+  margin: 0 auto;
+  border-bottom: 1px #b0b1b1 solid;
 }
 .header-list {
   display: flex;
   column-gap: 10vw;
 }
 .active {
-  background-color: cadetblue;
+  background-color: #29365d;
+  border-radius: 5px;
 }

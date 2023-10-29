@@ -10,6 +10,9 @@ import { TrainingComponent } from './training/training.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { DictionaryListItemComponent } from './dictionary-list/dictionary-list-item/dictionary-list-item.component';
 import { DictionaryService } from './dictionary.service';
+import { DictionaryItemEditComponent } from './dictionary-list/dictionary-item-edit/dictionary-item-edit.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NewWordComponent } from './new-word/new-word.component';
 
 @NgModule({
   declarations: [
@@ -20,8 +23,10 @@ import { DictionaryService } from './dictionary.service';
     NotFoundComponent,
     DictionaryListComponent,
     DictionaryListItemComponent,
+    DictionaryItemEditComponent,
+    NewWordComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, FormsModule],
   providers: [DictionaryService],
   bootstrap: [AppComponent],
 })
