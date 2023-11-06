@@ -1,5 +1,5 @@
 <div class="dictionary-list-item">
-  <p class="item-word">{{ word.valueEn }}</p>
+  <p class="item-word">{{ word.valueEn | uppercase }}</p>
   <p class="item-word">{{ word.valueRu }}</p>
   <div class="item-buttons">
     <button class="btn item-edit" (click)="onEdit()">edit</button>
